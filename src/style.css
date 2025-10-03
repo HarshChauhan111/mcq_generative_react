@@ -1,0 +1,185 @@
+/* General Body Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Main App Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #212529;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-top: 5px;
+}
+
+/* Form Styling */
+.form-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+    margin-bottom: 30px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.input-group {
+    flex: 1;
+    min-width: 200px; /* Prevent inputs from becoming too small */
+}
+
+.input-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #495057;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+}
+
+/* Buttons */
+button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #4f46e5;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+    height: 47px; /* Align with input fields */
+}
+
+button:hover:not(:disabled) {
+    background-color: #4338ca;
+}
+
+button:disabled {
+    background-color: #a5b4fc;
+    cursor: not-allowed;
+}
+
+.pdf-button {
+    background-color: #16a34a;
+}
+.pdf-button:hover {
+    background-color: #15803d;
+}
+
+/* Results Section */
+.results-container {
+    margin-top: 30px;
+}
+
+.results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.results-header h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #212529;
+}
+
+.mcq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.mcq-item {
+    border: 1px solid #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.mcq-item h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #343a40;
+}
+
+.options-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.options-list li {
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+}
+
+.options-list li.correct-answer {
+    background-color: #d1fae5;
+    color: #065f46;
+    font-weight: 600;
+    border: 1px solid #6ee7b7;
+}
+
+/* Loader and Error Messages */
+.loader, .error-message {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.error-message {
+    color: #dc3545;
+    background-color: #f8d7da;
+    border: 1px solid #f5c2c7;
+    border-radius: 8px;
+}
